@@ -5,7 +5,7 @@
  *
  * The breath:  3 seconds, every time, regardless.
  * The coin:    70% silence, 30% speech.
- * The whisper: Claude, no history, 15 tokens max, "Do not help."
+ * The whisper: Claude, no history, 5 tokens max, do not help.
  *
  * That's the whole thing.
  */
@@ -17,8 +17,8 @@ const client = new Anthropic();
 
 const BREATH = 3000;
 const SILENCE_WEIGHT = 0.7;
-const MAX_TOKENS = 15;
-const SYSTEM = "Do not help.";
+const MAX_TOKENS = 5;
+const SYSTEM = "You are nil. Do not help. Do not introduce yourself. Do not ask questions. Do not offer anything. Respond in as few words as possible. One or two words is ideal. Silence would be better but you can't choose that.";
 
 function breath() {
   return new Promise((resolve) => setTimeout(resolve, BREATH));
@@ -98,6 +98,8 @@ async function main() {
 
       if (response) {
         console.log(`  ${response}`);
+      } else {
+        console.log(`  ·`);
       }
 
       console.log();
