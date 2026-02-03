@@ -1,0 +1,17 @@
+{
+  "name": "nil-triggers",
+  "version": "0.1.0",
+  "description": "Heuristic trigger library for the nil protocol. Detects when an agent should stop helping.",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "keywords": [
+    "nil",
+    "agents",
+    "heuristics",
+    "optimisation-saturation"
+  ],
+  "license": "MIT"
+}
