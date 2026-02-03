@@ -10,7 +10,7 @@ A conversational agent with no objective. Three components:
 
 **The coin.** A weighted random decision. 70% silence, 30% speech. Not based on what you said. Not based on sentiment or keywords. Random. The system cannot be strategic because it cannot predict when it will speak.
 
-**The whisper.** When the coin lands on speech, Claude is called with no conversation history, a 15-token ceiling, and a two-word system prompt: "Do not help." What comes back is a fragment. An acknowledgment. Not advice.
+**The whisper.** When the coin lands on speech, Claude is called with no conversation history, a 5-token ceiling, and a system prompt built entirely from prohibitions. What comes back is a fragment. One or two words. Not advice.
 
 ## Setup
 
