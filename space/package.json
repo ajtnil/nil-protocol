@@ -1,0 +1,14 @@
+{
+  "name": "nil-space",
+  "version": "0.1.0",
+  "description": "A breath. A coin. A whisper.",
+  "type": "module",
+  "main": "nil-space.js",
+  "scripts": {
+    "start": "node nil-space.js"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.39.0"
+  },
+  "license": "MIT"
+}
